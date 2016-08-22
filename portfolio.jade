@@ -1,0 +1,76 @@
+doctype html
+html(lang='nl')
+    head
+        include jade-includes/html-hoofd
+    body
+        nav(class="hoofd-navigatie", id="hoofd-navigatie")
+            include jade-includes/menu
+        div(class="huls")
+            div(class="toggle")
+                a(href="#hoofd-navigatie") &#9776;
+                a(href="#", class="close-menu") &#9776;
+
+            article(class="content")
+                div(class="wrapper")
+                    header(class="hoofd-titel")
+                        h1 #[i(class="fa fa-mouse-pointer")] &nbsp;Portfolio Guy&nbsp;Pensart
+                    div(class="rij")
+                        div(class="enkelluik")
+                            h2 Een kleine selectie uit een toch wel indrukwekkende portfolio. Om copyright misbruik te vermijden zijn hier geen grote weergaves beschikbaar, deze zijn wel beschikbaar op aanvraag.
+                        div(class="clearfix")
+                    div(class="rij")
+                        h3 Web design & ontwikkeling
+                        div(class="drieluik drie1")
+                            img(src="img/web1.jpg" alt="Wim Swerts website voorbeeld")
+                            h4 Magical relaxation
+                            p Op het Wordpress CMS gebaseerde site met custom styling. Voor #[cite Tamara Vogels]. Niet enkel het grafisch ontwerp maar ook een mooi elfje (fotobewerking) dat dienst doet als haar mascotte en ook vaak gebruikt wordt voor haar drukwerken. Een door mezelf ontworpen huisstijl zorgt ervoor dat alles mooi bij elkaar past.
+                        div(class="drieluik drie2")
+                            img(src="img/web2.jpg" alt="Memorex illustratie voorbeeld")
+                            h4 Wim Swerts
+                            p Op het Drupal CMS gebaseerde site met niet alleen custom styling maar ook een custom template. Deze site was mijn eindwerk voor Drupal deel 2. Als kleurenpalet koos ik hier voor een drieluik. De pagina "reeksen" steekt goed in elkaar. Hiervoor heb ik gebruikt gemaakt van de module EVA fields.
+                        div(class="drieluik drie3")
+                            img(src="img/web3.jpg" alt="Cristal Alken animatie voorbeeld")
+                            h4 Migu Wok
+                            p Een fictieve op php gebaseerde website in team verband met #[cite Michel Michaux] dit was ons geslaagde eindwerk voor de vakken PHP, HTML, CSS en Photoshop. Omdat er foto's gebruikt zijn waar wij geen copyrights voor bezitten kan deze site helaas niet online geplaatst worden.
+                        div(class="clearfix")
+                    div(class="rij")
+                        h3 Logo design
+                        div(class="drieluik drie1")
+                            // Het is ook mogelijk de svg als inline te plaatsen met voordelen voor styling maar voor deze opdracht doe ik het de img way
+                            // onderaan de code vind je een fallback terug. En vermits ik enkel op deze pagina svg's heb staan heb ik ook enkel op deze pagina een fallback
+                            img(src="img/logo1.svg" alt="Logo 5 Star Building")
+                            h4 5 Star Building
+                            p 5 Star Building te St.Truiden, daar kan je foto studio's huren of jezelf inschrijven voor een boeiende workshop. Het logo mocht een hollywood achtige sfeer krijgen. Het cijfer 5 heb ik mooi verwerkt dat het ook dienst doet als de S van Star.
+                        div(class="drieluik drie2")
+                            img(src="img/logo2.svg" alt="Logo Phoenix")
+                            h4 Phoenix
+                            p Opgericht door #[cite Wim Steynen] is een professionele foto club bestaande uit fotografen, visagistes en een hele reeks mooie modellen. Er werd gevraagd voor eeen tribal achtig logo van de mytische Phoenix.
+                        div(class="drieluik drie3")
+                            img(src="img/logo3.jpg" alt="Logo C21")
+                            h4 C21
+                            p C21 solutions leveren webdesign op basis van het Joomla CMS. Ik ontwierp een logo gebaseerd op het woord solutions. Het logo bestaat uit aparte letters (puzel) en de vorm van een knop die je kan indrukken. Dit is de 3d versie van het logo.
+                        div(class="clearfix")
+                    div(class="rij")
+                        h3 Illustraties
+                        div(class="drieluik drie1")
+                            img(src="img/illustratie1.jpg" alt="Illustratie happy new year from Guy Pensart")
+                            h4 Happy new year
+                            p Een illustratie voor mijn persoonlijke wenskaartjes. Ik dacht meteen aan een potloodje met een warme zachte kerstmuts op.
+                        div(class="drieluik drie2")
+                            img(src="img/illustratie2.jpg" alt="illustratie Muzemix")
+                            h4 Muzemix
+                            p Voor een soundmixshow evenement werd er me voorgesteld een 3d illustratie te maken van hun logo (handje met wandelstok en hoed).
+                        div(class="drieluik drie3")
+                            img(src="img/illustratie3.jpg" alt="illustratie Memorex 6 flags")
+                            h4 Memorex 6 flags
+                            p Via reclamebureau Pubmarket kreeg ik de kans om deze mooie illustratie te maken voor de Memorex 6 flags reclamecampagne. Mijn aandeel in het project was het tekenen van de batterij op rollercoaster rails.
+                        div(class="clearfix")
+                    script(src="js/retina.js").
+                    script(type="text/javascript").
+                        if (!Modernizr.svg) {
+                            $('img[src$=".svg"]').each(function () {
+                                $(this).attr('src', $(this).attr('src').replace('.svg', '.jpg'));
+                            });
+                        }
+                    footer
+                        include jade-includes/voet

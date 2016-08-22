@@ -1,0 +1,14 @@
+/* een paar simpele maar toch handige mixins */
+
+@mixin positie($waar, $top, $links) {
+  box-sizing: border-box;
+  position: $waar;
+  top: $top;
+  left: $links;
+}
+/* 320 pixels, 480 pixels, 640 pixels, 768 pixels en 1024 pixels */
+@mixin min-screen($min-breedte) {
+  @media only screen and (min-width: $min-breedte){
+    @content
+  }
+}

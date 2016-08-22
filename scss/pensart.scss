@@ -1,0 +1,190 @@
+@import "pen-info";
+@import "normalize";
+@import "font-awesome";
+@import "pen-variabelen";
+@import "pen-mixins";
+@import "pen-typografie";
+
+body {
+  margin: 0;
+  background: $wit-standaard;
+  color: $zwart-standaard;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+address {
+  span {
+    color: $rood-standaard;
+  }
+}
+
+.toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  color: $wit-standaard;
+  background-color: $rood-standaard;
+  overflow: hidden;
+  transition: left $tijd-slide ease-out;
+  a {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    color: white;
+    font-size: 32px;
+  }
+}
+
+.huls {
+
+  display:block;
+  width: auto;
+  height: 100%;
+  overflow-y: auto;
+  transition: left $tijd-slide ease-out;
+  .content {
+    padding: 0 0 0 $zijbalk-ingeklapt;
+    @include min-screen(900px) {
+      padding: 0;
+    }
+  }
+  .toggle {
+    width: $zijbalk-ingeklapt;
+  }
+  .toggle a.close-menu {
+    display: none;
+  }
+  .hoofd-titel {
+    padding: 0 20px;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+
+.hoofd-navigatie {
+  position: fixed;
+  top: 0;
+  left:-$zijbalk-breedte;
+  width: $zijbalk-breedte;
+  height: 100%;
+  background: $zwart-standaard;
+  overflow-y: auto;
+  transition: left $tijd-slide ease-out;
+  text-transform: capitalize;
+  a {
+    display: block;
+    font-size: 1.2em;
+    border-bottom: 1px solid #222;
+    color: white;
+    padding: 1.2em;
+    &:hover,
+    &:focus {
+      background: darken($zwart-standaard, 3);
+    }
+  }
+  &:target {
+    left: 0;
+    + .huls {
+      left: $zijbalk-breedte;
+      .close-menu {
+        display: block;
+      }
+      .toggle {
+        left: $zijbalk-breedte;
+      }
+    }
+  }
+}
+.clearfix {
+  clear: both;
+}
+
+// Stijlen zonder gridsysteem
+.rij {
+  padding: 0 $vulling;
+  margin-bottom: $vulling * 2;
+}
+
+.enkelluik {
+  box-sizing: border-box;
+  float:left;
+  width: 100%;
+}
+.enkelluik p {
+  font-size: 1.2em;
+}
+.tweeluik {
+  box-sizing: border-box;
+  float:left;
+  width: 100%;
+  @include min-screen(700px) {
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    margin-bottom: $vulling * .5;
+  }
+}
+.drieluik {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 400px;
+  @include min-screen(700px) {
+    float: left;
+    width: 33.33%;
+  }
+  img {
+    width: 100%;
+    margin-bottom: $vulling * .5;
+    border: 1px solid #d4d4d4;
+  }
+}
+.twee1 {
+  padding: 0 $vulling *.5 0 0;
+}
+.twee2 {
+  padding: 0 0 0 $vulling *.5;
+}
+.drie1 {
+  padding: 0 $vulling *.5 0 0;
+}
+.drie2 {
+  padding: 0 $vulling *.25 0 $vulling *.25;
+}
+.drie3 {
+  padding: 0 0 0 $vulling *.5;
+}
+
+/* deze regels zorgen ervoor dat vanaf schermgrootte x
+het menu niet meer dichtklapt omdat er toch genoeg ruimte is */
+@include min-screen(900px) {
+
+  .hoofd-navigatie {
+    left: 0;
+  }
+  .huls {
+    padding-left: $zijbalk-breedte;
+  }
+  .toggle {
+    display: none;
+  }
+}
+@include min-screen(1500px) {
+  article {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+
+
+
+
+

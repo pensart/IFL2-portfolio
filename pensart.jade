@@ -1,0 +1,36 @@
+doctype html
+html(lang='nl')
+    head
+        include jade-includes/html-hoofd
+    body
+        nav(class="hoofd-navigatie", id="hoofd-navigatie")
+            include jade-includes/menu
+        div(class="huls")
+            div(class="toggle")
+                a(href="#hoofd-navigatie") &#9776;
+                a(href="#", class="close-menu") &#9776;
+
+            article(class="content")
+                div(class="wrapper")
+                    header(class="hoofd-titel")
+                        h1 #[i(class="fa fa-user")] &nbsp;Wie is Guy&nbsp;Pensart
+                    div(class="rij")
+                        div(class="enkelluik")
+                            h2 Mijn persoonlijkheid kan ik best omschrijven als een rustig maar vaak ook zeer enthousiast persoon. Iemand die enorm strijdlustig is met een perfectionistische inslag. Als ik ergens aan begin bijt ik me erin vast tot het einddoel bereikt is. In het verleden heb ik bewezen dat ik erg goed functioneer in teamverband, maar ook zelfstandig enorme knappe resultaten kan neerzetten onder intense druk.
+                        div(class="clearfix")
+                        div(class="tweeluik twee1")
+                            h3 Over mezelf
+                            address
+                                |#[i(class="fa fa-phone")]&nbsp;&nbsp;0486/ 45 93 66 <br/>
+                                |#[i(class="fa fa-envelope-o")]&nbsp;guy.pensart&nbsp;#[span apenstaartje]&nbsp;hotmail.com <br/>
+                            p Geboren te Bilzen op 10 oktober 1969. Opgegroeid in het mooi en rustig dorpje Hoeselt, momenteel woonachtig te Bilzen. Back to the roots zou men zeggen :)
+                            h4 Hobby's
+                            p Heel wat hobby's en dus tijd te kort. In mijn vrije tijd vind je me vaak terug in de fitness te Bilzen (Basic Fit). Maar meestal ben ik actief met mijn creatieve passie. Dit omvat vooral illustraties en animatie filmpjes in elkaar knutselen. Ook het experimenteren met web ontwikkeling mag ik toch wel aan mijn hobby's toevoegen.
+                            h4 Talen
+                            p Mijn moedertaal is #[strong nederlands] maar heb ook een grondige kennis van #[strong engels]. #[strong frans], tja dat hebben we op school geleerd en ik was er best goed in maar voor de rest heb ik er weinig mee gedaan, het is wel handig tijdens een bezoekje naar onze zuiderburen. En toegegeven het is een mooie taal die ik uiteindelijk toch nog wil opfrissen zodra ik de kans krijg. Dankzij vrienden in Duitsland mag ik #[strong duits] toch ook wel aan het lijstje toevoegen. Niet zo sterk als de andere talen maar ik kan me goed verstaanbaar maken en begrijpen is heel geen probleem.
+                        div(class="tweeluik twee2")
+                            img(src="img/guy-pensart.jpg" alt="Foto Guy Pensart met dochter op schoot")
+                        div(class="clearfix")
+                    script(src="js/retina.js").
+                    footer
+                        include jade-includes/voet
