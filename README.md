@@ -1,4 +1,4 @@
-#Project-IFL2-cvo
+#InterFaceLab 2 portfolio project
 
 ##Description
 This was my final project for the course interface lab 2 at CVO de verdieping.  
