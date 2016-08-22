@@ -18,9 +18,9 @@ Demo: http://cvo.guypensart.be/Eindwerk-IFL-bis/portfolio.html
 * support for IE9 and up but also cross browser
 
 ##Used javascripts
-* Modernizr - _support for old browsers and fallback for the SVG logo's in the portfolio_
-* Prefixfree - _allowing me being lazy and not including a single prefix_
-* Petina - _to provide high quality images for retina displays_
+* Modernizr.js - _support for old browsers and fallback for the SVG logo's in the portfolio_
+* Prefixfree.js - _allowing me being lazy and not including a single prefix_
+* Retina.js - _to provide high quality images for retina displays_
 
 ##@ Copyright notice
 The images, illustrations and vector logo's are copyrighted, Do not use them.
