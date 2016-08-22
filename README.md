@@ -20,5 +20,5 @@ http://cvo.guypensart.be/Eindwerk-IFL-bis/portfolio.html
 * prefixfree _allowing me being lazy and not including a single prefix_
 * retina _to provide high quality images for retina displays_
 
-##\@ Copyright notice
+##@ Copyright notice
 The images, illustrations and vector logo's are copyrighted, Do not use them.
