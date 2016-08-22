@@ -1,7 +1,6 @@
 #InterFaceLab 2 portfolio project
 
-Inline-style: 
-![alt text](cover.jpg "Logo Title Text 1")
+![alt text](cover.jpg "IFL2 pensart portfolio")
 
 ##Description
 This was my final project for the course interface lab 2 at CVO de verdieping.  
