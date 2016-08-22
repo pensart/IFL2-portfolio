@@ -9,6 +9,8 @@ Demo: http://cvo.guypensart.be/Eindwerk-IFL-bis/portfolio.html
 
 ##Project rules
 * Valid HTML & CSS
+* Use of SVG
+* Responsive and support for retina displays
 * No dynamic pages, so no php allowed
 * No javascript beside some allowed scripts
 * No frameworks for styling like Boostrap or Foundation
