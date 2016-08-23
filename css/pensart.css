@@ -2601,6 +2601,15 @@ address span {
 .drie3 {
   padding: 0 0 0 10px; }
 
+.refs {
+  border-left: 3px solid #eee;
+  padding-left: 10px; }
+
+.refs small {
+  display: block;
+  margin-bottom: 50px;
+  color: red; }
+
 /* deze regels zorgen ervoor dat vanaf schermgrootte x
 het menu niet meer dichtklapt omdat er toch genoeg ruimte is */
 @media only screen and (min-width: 900px) {
