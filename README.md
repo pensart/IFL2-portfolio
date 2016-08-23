@@ -7,6 +7,9 @@ This was my final project for the course interface lab 2 at CVO de verdieping.
 As long as my hosting volume allows some space for it  
 Demo: http://cvo.guypensart.be/Eindwerk-IFL-bis/portfolio.html
 
+##SCSS and Jade compiling
+SCSS and jade compiling was done in phpStorm.
+
 ##Project rules
 * Valid HTML & CSS
 * Use of SVG
